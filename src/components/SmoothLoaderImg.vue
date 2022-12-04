@@ -19,17 +19,13 @@ onMounted(() => imgElem.value ? smoothLoader([imgElem.value]) : null)
         :src="sm"
         :data-src="lg"
         ref="imgElem"
+        style="background-color: #eee;"
     />
 
     <img
         v-else
         :data-src="lg"
         ref="imgElem"
+        style="background-color: #eee;"
     />
 </template>
-
-<style scoped>
-img {
-    background-color: #eee;
-}
-</style>
